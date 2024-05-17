@@ -1,0 +1,12 @@
+NON copiare
+dir storage
+dir bootstrap
+.env
+
+Eliminare
+public\hot
+
+Verificare sia presente
+web.config (errore 404 livewire.js e tipo MIME webp)
+
+In caso di problemi guardare video con mi piace su youtube relativi a laravel / IIS server

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.button {
+    @apply text-center px-4 py-2 bg-royal-blue border border-transparent rounded-full font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-amber hover:text-black dark:hover:bg-white dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-midnight-blue focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150;
+}
+
+
+
+button.active {
+    @apply bg-royal-blue text-white;
+}
+
+button.active:hover {
+    @apply bg-midnight-blue text-white;
+}
+
+button:hover {
+    @apply bg-amber text-black;
+}
+
+svg:hover {
+    @apply fill-black;
+}
+
+button:disabled {
+    @apply bg-gray-400 text-gray-800;
+    cursor: not-allowed;
+}
+
+button:active {
+    @apply bg-midnight-blue text-white;
+}
+
+
+* {
+    @apply transition ease-in-out duration-150;
+    user-select: none;
+}
