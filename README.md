@@ -13,36 +13,41 @@ Bryanair is a flight booking system that allows users to search for and book fli
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/th3-7rue/bryanair.git
-    ```
+   ```bash
+   git clone https://github.com/th3-7rue/bryanair.git
+   ```
 
 2. Install the required dependencies:
 
-    ```bash
-    npm install
-    composer install
-    ```
-
+   ```bash
+   npm install
+   composer install
+   ```
 
 3. Set up the database:
 
-    - Create a new database in your preferred database management system.
-    - Import the `bryanair.sql` file into the newly created database.
-    - Update the database configuration in the `.env` file with your database credentials.
+   - Create a new database in your preferred database management system.
+   - Import the `bryanair.sql` file into the newly created database.
+   - Copy the `.env.example` file and rename it to `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   - Update the database configuration in the `.env` file with your database credentials.
 
 4. Migrate the database:
 
-    ```bash
-    php artisan migrate
-    ```
+   ```bash
+   php artisan migrate
+   ```
 
 5. Start the application (use two separate terminals):
 
-    ```bash
-    php artisan serve
-    npm run dev
-    ```
+   ```bash
+   php artisan serve
+   npm run dev
+   ```
 
 ## Technologies Used
 
