@@ -9,10 +9,6 @@ Bryanair is a flight booking system that allows users to search for and book fli
 - User authentication: Users can create accounts and log in to access their booking history and manage their profile.
 - Booking management: Users can view their booked flights bookings.
 
-## Demo
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3FlM2sMBIk?si=dTvt1EouIcXbbGoq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Installation
 
 1. Clone the repository:
