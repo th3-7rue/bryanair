@@ -41,7 +41,8 @@ https://github.com/th3-7rue/bryanair/assets/66943187/4bd6d04c-1ee4-4046-ae5b-bc6
    - Update the database configuration in the `.env` file with your database credentials.
 
 4. Migrate the database:
-
+    - Delete table users
+    - Do migrations:
    ```bash
    php artisan migrate
    ```
