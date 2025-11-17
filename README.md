@@ -82,7 +82,7 @@ Then, you will have to populate the seats of the aircraft selected for the fligh
 
    You need to check if a file named *php.ini* exist in your PHP folder. If not, create it and copy *php.ini-development* content into it.
 
-   If you already have php.ini, search for *Dynamic Extensions*, scroll down a bit and remove the semicolons before the required extensions. (If you do not know which ones are required, you may just enable them all **except** for snmp)
+   If you already have php.ini, search for *Dynamic Extensions*, scroll down a bit and remove the semicolons before the required extensions. (If you do not know which ones are required, you may just enable them all **except** for pdo_firebird and snmp - they will just give new erros)
 
 ## Technologies Used
 
