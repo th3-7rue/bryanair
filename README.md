@@ -61,6 +61,8 @@ https://github.com/th3-7rue/bryanair/assets/66943187/4bd6d04c-1ee4-4046-ae5b-bc6
 
 **A:** If you can't see any airport when using the app, it is very likely that there are just no *future* flights planned. You might want to generate them with *generaVoli.py*, or manually add them.
 
+**Please notice that the python script will only output a sql query, you have to run the query on the database for the change to be effective**
+
 **Q: I get errors when using *composer install***
 
 **A:** There are two probable causes:
