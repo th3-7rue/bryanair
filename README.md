@@ -51,8 +51,38 @@ https://github.com/th3-7rue/bryanair/assets/66943187/4bd6d04c-1ee4-4046-ae5b-bc6
 
    ```bash
    php artisan serve
+   ```
+   ```bash
    npm run dev
    ```
+## FAQ
+
+**Q: I can't see any airport**
+
+**A:** If you can't see any airport when using the app, it is very likely that there are just no *future* flights planned.
+
+You might want to generate them with *generaVoli.py*, or manually add them.
+
+Then, you will have to populate the seats of the aircraft selected for the flight. You can generate these too with *generaPosti.py*
+
+**Please notice that the python scripts will only output a sql query, you have to run the query on the database for the change to be effective**
+
+**Q: I get errors when using *composer install***
+
+**A:** There are two probable causes:
+
+1. Laravel dependancies are not updated
+   
+   **Solution**
+   
+   ```bash
+   composer update
+   ```
+2. PHP dynamic extensions are disabled
+
+   You need to check if a file named *php.ini* exist in your PHP folder. If not, create it and copy *php.ini-development* content into it.
+
+   If you already have php.ini, search for *Dynamic Extensions*, scroll down a bit and remove the semicolons before the required extensions. (If you do not know which ones are required, you may just enable them all **except** for pdo_firebird and snmp - they will just give new erros)
 
 ## Technologies Used
 
