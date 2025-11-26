@@ -4,12 +4,12 @@ import random
 # Define the route and number of flights per day
 departure_airport =230   # Alicante 
 arrival_airport =  817   # Bologna
-aircraft = 25
-airline = 1
+aircraft = 24  
+airline = 2  
 
 # Define the start and end dates
-start_date = datetime.datetime(2024, 5, 2)
-end_date = datetime.datetime(2025, 5, 2)
+start_date = datetime.datetime(2025, 11, 17)
+end_date = datetime.datetime(2026, 5, 2)
 
 # Define the time intervals for each day (departure times)
 time_intervals = [
@@ -81,6 +81,6 @@ while current_date <= end_date:
 sql_query = sql_query.rstrip(",\n")
 
 # Print the SQL query
-print(sql_query)
+print(sql_query+";")
 
 
