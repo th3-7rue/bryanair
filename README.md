@@ -37,7 +37,8 @@ https://github.com/th3-7rue/bryanair/assets/66943187/4bd6d04c-1ee4-4046-ae5b-bc6
    ```bash
    cp .env.example .env
    ```
-
+   - **READ THIS IF YOU'RE GOING TO USE SQLITE**
+        When importing bryanair.sql to your fresh sqlite db, you'll notice that types and keys are not correctly imported, so you have to manually change (at least) the 'id' field to primary key integer and assign type number to field 'aircraft' in table seats_aircraft. I made a python script to automate the primary key transformation.
    - Update the database configuration in the `.env` file with your database credentials.
 
 4. Migrate the database:
